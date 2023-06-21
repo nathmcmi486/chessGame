@@ -450,7 +450,7 @@ namespace chessGame
                                 continue;
                             }
 
-                            // The piece has already been looked at
+                            // The piece has already been looked at and it is not a random move
                             if (randomMove == false && movePieceName.Contains(board[x][y]))
                             {
                                 continue;
