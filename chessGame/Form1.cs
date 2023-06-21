@@ -658,7 +658,7 @@ namespace chessGame
                 e.Graphics.FillRectangle(whiteBrush, menuButtons[2]);
 
                 e.Graphics.DrawString("Player vs Player", menuFont, blackBrush, new Point(menuButtons[0].X, menuButtons[0].Y));
-                e.Graphics.DrawString("Player vs computer", menuFont, whiteBrush, new Point(menuButtons[1].X, menuButtons[1].Y));
+                e.Graphics.DrawString("Computer Player", menuFont, whiteBrush, new Point(menuButtons[1].X, menuButtons[1].Y));
                 e.Graphics.DrawString("Exit", menuFont, blackBrush, new Point(menuButtons[2].X, menuButtons[2].Y));
 
                 return;
