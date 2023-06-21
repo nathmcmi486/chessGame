@@ -348,7 +348,7 @@ namespace chessGame
             if (peiceName.StartsWith("q"))
             {
                 // These parts should be their own methods
-                // Check if it’s moving diagonally (like bishops)
+                // Check if itÂ’s moving diagonally (like bishops)
                 if (validStraight(x, y, moveX, moveY) || validDiagonal(x, y, moveX, moveY))
                 {
                     return true;
@@ -424,10 +424,10 @@ namespace chessGame
 
             bool randomMove = true;
 
-            if (rand.Next(0, 101) > 50)
+            /*if (rand.Next(0, 101) > 50)
             {
                 randomMove = false;
-            }
+            }*/
 
             if (firstComputerMove)
             {
@@ -448,13 +448,16 @@ namespace chessGame
                             if (board[x][y].Contains("B") == false)
                             {
                                 continue;
-                            }
-
-                            // The piece has already been looked at
-                            if (randomMove == false && movePieceName.Contains(board[x][y]))
+                            } else if (rand.Next(0, 101) > 40)
                             {
                                 continue;
                             }
+
+                            // The piece has already been looked at
+                            /*if (randomMove == false && movePieceName.Contains(board[x][y]))
+                            {
+                                continue;
+                            }*/
 
                             int attempts = 0;
 
